@@ -1,0 +1,187 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #ff523b;
+}
+
+a:hover {
+    color: #ff3311;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav ul li a img {
+    vertical-align: middle;
+}
+
+/* Cart Page */
+.small-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Cart Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    background-color: #f8f8f8;
+}
+
+.cart-info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.cart-info img {
+    width: 80px;
+    margin-right: 20px;
+}
+
+.cart-info div {
+    text-align: left;
+}
+
+.cart-info p {
+    font-size: 16px;
+    margin: 0;
+}
+
+.cart-info small {
+    display: block;
+    margin-top: 5px;
+    color: #888;
+}
+
+.cart-info a {
+    margin-top: 10px;
+    display: inline-block;
+    font-size: 14px;
+}
+
+input[type="number"] {
+    width: 50px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Total Price Section */
+.total-price {
+    float: right;
+    width: 300px;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.total-price table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.total-price td {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.total-price td:last-child {
+    text-align: right;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    background-color: #ff523b;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #ff3311;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .cart-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cart-info img {
+        margin-bottom: 10px;
+    }
+
+    .total-price {
+        float: none;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    table th, table td {
+        font-size: 14px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
